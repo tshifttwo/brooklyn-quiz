@@ -1,0 +1,88 @@
+/*---------------------------------------------------------------------------------
+   Common Styles
+---------------------------------------------------------------------------------*/
+
+h1{
+	font-family: 'Francois One', sans-serif;
+	color:white;
+	letter-spacing: .8px;
+	text-align:center;
+	
+}
+
+h2{font-family: 'Lato', sans-serif;
+color:white;
+font-weight: 300;
+
+}
+
+h3{
+	font-family: 'Lato', sans-serif;
+}
+
+button{
+	background-color:rgba(0, 0, 0, 0.5);
+	width:20em;
+	border:none;
+	letter-spacing: .5px;
+	position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+button:hover{
+	transition: border 0.5s ease;
+	background-color:rgba(0, 0, 0, 0.9);
+	border:.5px solid white;
+	width:20em;
+	letter-spacing: .5px;
+	position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+/*---------------------------------------------------------------------------------
+   Intro Page
+---------------------------------------------------------------------------------*/
+
+.introtext{
+	margin-top:6em;
+}
+
+.intropageoverlay{
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.intropage {
+	width: 100%;
+	height: 100%;
+	color: #fffff;
+	background-image: url("http://www.theepochtimes.com/n3/eet-content/uploads/2013/05/20120125-Brooklyn+Bridge-IMG_9622-Amal+Chen.jpg");
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right:0;
+	margin: 0;
+	z-index:5;
+	overflow: hidden;
+/*	display: none;*/
+}
+
+.cta:hover{
+	font-weight:400;
+}
+
+
+
