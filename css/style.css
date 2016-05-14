@@ -1,6 +1,9 @@
 /*---------------------------------------------------------------------------------
    Common Styles
 ---------------------------------------------------------------------------------*/
+body{
+	background-color: black;
+}
 
 h1{
 	font-family: 'Francois One', sans-serif;
@@ -45,8 +48,10 @@ button:hover{
    Intro Page
 ---------------------------------------------------------------------------------*/
 
+
 .introtext{
 	margin-top:6em;
+	transition: 0.5s ease;
 }
 
 .intropageoverlay{
