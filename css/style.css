@@ -13,11 +13,21 @@ h1{
 	
 }
 
+@media only screen and (max-width: 500px) {
+    h1{
+      font-size: 2.5em;
+        
+    }
+}
+
 h2{font-family: 'Lato', sans-serif;
 color:#ffffff;
 font-weight: 300;
 
 }
+
+
+
 
 h3{
 	font-family: 'Francois One', sans-serif;
@@ -27,6 +37,17 @@ h3{
 	text-align:center;
 }
 
+@media only screen and (max-width: 700px) {
+    h3{
+      font-size: 1.5em;
+      padding-top: 10px;
+      padding-left:10px;
+      padding-right:10px;
+        
+    }
+}
+
+
 h4{
 	font-family: 'Lato', sans-serif;
 	color:#ffffff;
@@ -35,11 +56,26 @@ h4{
 	text-align:center;
 }
 
+
 p{
 	font-family: 'Lato', sans-serif;
 	color:#ffffff;
 	font-weight: 300;
 	font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    p{
+      font-size: 16px;
+        
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1020px) {
+    p{
+      font-size: 18px;
+        
+    }
 }
 
 button{
@@ -49,7 +85,24 @@ button{
 	letter-spacing: .5px;
 	position: absolute;
     top: 70%;
-    left: 40%;
+    left: 35%;
+}
+
+/*button media queries*/
+@media only screen and (max-width: 500px) {
+   button{
+      left:10%;
+    }
+}
+@media only screen and (min-width:500px) and (max-width: 640px)   {
+   button{
+      left:25%;
+    }
+}
+@media only screen and (min-width:640px) and (max-width: 940px)   {
+   button{
+      left:30%;
+    }
 }
 
 button:hover{
@@ -88,6 +141,13 @@ button:hover{
 	transition: 0.5s ease;
 }
 
+
+@media only screen and (max-width: 500px) {
+    .introtext{
+      margin-top:4em;
+        
+    }
+}
 
 .intropage {
 	width: 100%;
@@ -128,6 +188,12 @@ button:hover{
 	margin-right:auto;
 	margin-top:3em;
 }
+@media only screen and (max-width: 800px){
+   .questionbox{
+    width: 85%;
+    height: 90%;
+        }
+}
 
 .progressbar{
     width: 22em;
@@ -138,8 +204,24 @@ button:hover{
     padding-top:6px;
 }
 
+
+@media only screen and (max-width: 500px){
+   .progressbar{
+    width: 340px;
+    height: 3em;
+        }
+}
 .questionnumber{
 	padding-top: 10px
+}
+
+@media only screen and (max-width: 500px){
+   .questionnumber{
+    padding-top: 10px;
+    width: 100%;
+    margin-bottom: 2px;
+        
+    }
 }
 
 .progresscircles{
@@ -149,6 +231,14 @@ button:hover{
 	margin-right:auto;
 }
 
+@media only screen and (max-width: 500px){
+   .progresscircles {
+   		margin-top:3px;
+        
+    }
+}
+    
+
 .progresscircles li{
 	display:inline-block;
 	border-radius: 50%;
@@ -156,6 +246,14 @@ button:hover{
 	border:1px solid white;
 	margin-left:20px;
 	margin-right:20px;
+}
+
+@media only screen and (max-width: 500px){
+   .progresscircles li{
+    padding:3px;
+    margin-left:18px;
+        
+    }
 }
 
 .filledcircle{
@@ -177,6 +275,28 @@ button:hover{
     padding-bottom:auto;
 }
 
+@media only screen and (max-width: 700px) {
+    .leftcolumn{
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:0;
+    padding-bottom:0;
+        
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1020px) {
+    .leftcolumn{
+    width: 40%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:0;
+    padding-bottom:0;
+        
+    }
+}
+
 .rightcolumn{
 	width: 40%;
     float: left;
@@ -187,6 +307,26 @@ button:hover{
     padding-bottom:auto;
 }
 
+@media only screen and (max-width: 700px) {
+    .rightcolumn{
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:0px;
+    padding-bottom:0;
+
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    ul.answercolumn{
+    margin-bottom:-12px;
+
+    }
+}
+
+
 .answercolumn li{
 	background-color:none;
 	min-height: 60px;
@@ -195,15 +335,40 @@ button:hover{
     padding-right:0px;
 }
 
+@media only screen and (max-width: 700px) {
+    .answercolumn li{
+    padding-left: 0;
+    min-height:40px;
+    padding-bottom:0;
+        
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1020px) {
+    .answercolumn li{
+    width: 100%;
+    padding-left:0;
+    padding-bottom:0;     
+    }
+}
+
+
+
 .answercolumn li img{
 	padding-top:10px;
 }
 
 .nextquestion{
-	clear:both;
 	float:right;
 	padding-right: 30px;
 	font-size: 16px;
+}
+
+@media only screen and (max-width: 500px) {
+    .nextquestion{
+      font-size: 12px;     
+      padding-top:10px;   
+    }
 }
 
 /*---------------------------------------------------------------------------------
@@ -288,7 +453,7 @@ button:hover{
 	margin: 0;
 	z-index:5;
 	overflow: hidden;
-	/*display: none;*/
+/*	display: none;*/
 }
 
 
