@@ -78,6 +78,32 @@ p{
     }
 }
 
+a{
+	font-family: 'Lato', sans-serif;
+	color:#ffffff;
+	font-weight: 300;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    a{
+      font-size: 16px;
+      text-decoration: none;
+        
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1020px) {
+    a{
+      font-size: 18px;
+      text-decoration: none;
+        
+    }
+}
+
+
+
 button{
 	background-color:rgba(0, 0, 0, 0.5);
 	width:20em;
@@ -113,7 +139,7 @@ button:hover{
 	letter-spacing: .5px;
 	position: absolute;
     top: 70%;
-    left: 40%;
+    left: 35%;
 }
 
 
@@ -358,21 +384,72 @@ button:hover{
 	padding-top:10px;
 }
 
+@media only screen and (max-width: 700px) {
+    .answercolumn li img{
+    max-height:40px;
+    max-width:auto;  
+    }
+}
+
+
 .nextquestion{
 	float:right;
 	padding-right: 30px;
 	font-size: 16px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
     .nextquestion{
       font-size: 12px;     
-      padding-top:10px;   
+      padding-top:8px;
+/*      padding-bottom:10px; */  
     }
 }
 
+.resultbox{
+	width:50%;
+	height:18em;
+	background-color: rgba(0, 0, 0, 0.7);
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:8em;
+	z-index:20;
+}
+@media only screen and (max-width: 800px){
+   .resultbox{
+    width: 85%;
+    height: 90%;
+        }
+}
+
+h2#youbelong{
+	text-align: center;
+	padding-top: 16px;
+}
+
+.links{
+	width:100%;
+}
+
+#linkbox{
+	width: 27%;
+    float: left;
+    border: 1px solid white;
+    margin-left: 16px;
+    margin-right: 10px;
+    padding: 5px;
+    height: 70px;
+
+}
+
+#linkcontent{
+	margin:auto;
+
+}
+
 /*---------------------------------------------------------------------------------
-   Question 1
+   Question Pages
 ---------------------------------------------------------------------------------*/
 
 
@@ -453,7 +530,26 @@ button:hover{
 	margin: 0;
 	z-index:5;
 	overflow: hidden;
-/*	display: none;*/
+	display: none;
 }
 
+/*---------------------------------------------------------------------------------
+   Results Pages
+---------------------------------------------------------------------------------*/
+
+.Williamsburgresult{
+	width: 100%;
+	height: 100%;
+	background-image: url("http://www.raystours.nyc/wp-content/uploads/2015/01/11-_DSC0134-001.jpg");
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right:0;
+	margin: 0;
+	z-index:5;
+	overflow: hidden;
+	/*display: none;*/
+}
 
