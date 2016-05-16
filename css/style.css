@@ -189,7 +189,7 @@ button:hover{
 	margin: 0;
 	z-index:5;
 	overflow: hidden;
-	display: none;
+/*	display: none;*/
 }
 
 .cta:hover{
@@ -408,7 +408,7 @@ button:hover{
 
 .resultbox{
 	width:50%;
-	height:18em;
+	height:19em;
 	background-color: rgba(0, 0, 0, 0.7);
 	display:block;
 	margin-left:auto;
@@ -445,9 +445,44 @@ h2#youbelong{
 
 #linkcontent{
 	margin:auto;
+	padding-top: 10px
 
 }
 
+.icon{
+	width: 25px;
+    padding-left: 75px;
+    padding-right: 69px;
+}
+
+#ctazill{
+	padding-left: 46px
+}
+
+#ctayelp{
+	padding-left: 13px
+}
+
+#ctatwit{
+	padding-left: 46px
+}
+
+.startover{
+	display: block;
+    width: 7.3em;
+    margin: auto;
+}
+
+.or{
+	float:left;
+}
+
+.restartlink{
+	float:left;
+	padding-top:24px;
+	padding-left:5px;
+	text-decoration: underline;
+}
 /*---------------------------------------------------------------------------------
    Question Pages
 ---------------------------------------------------------------------------------*/
@@ -550,6 +585,86 @@ h2#youbelong{
 	margin: 0;
 	z-index:5;
 	overflow: hidden;
-	/*display: none;*/
+	display: none;
+}
+
+.Bushwickresult{
+	width: 100%;
+	height: 100%;
+	background-image: url("https://joedicondina.files.wordpress.com/2015/05/bushwick1.jpg");
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right:0;
+	margin: 0;
+	z-index:5;
+	overflow: hidden;
+	display: none;
+}
+
+.CHeightsresult{
+	width: 100%;
+	height: 100%;
+	background-image: url("http://blog.propcy.com/wp-content/uploads/2015/10/crown-heights-cover.jpg");
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right:0;
+	margin: 0;
+	z-index:5;
+	overflow: hidden;
+	display: none;
+}
+
+.bkHeightsresult{
+	width: 100%;
+	height: 100%;
+	background-image: url("https://www.walksofnewyork.com/blog/wp-content/uploads/2012/07/Cranberry-St-1024x768.jpg");
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right:0;
+	margin: 0;
+	z-index:5;
+	overflow: hidden;
+	display: none;
+}
+
+.dumboresult{
+	width: 100%;
+	height: 100%;
+	background-image: url("http://pixel.nymag.com/imgs/daily/intelligencer/2015/10/10/10-dumbo-brooklyn.w750.h560.2x.jpg");
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right:0;
+	margin: 0;
+	z-index:5;
+	overflow: hidden;
+	display: none;
+}
+
+.parkslopeesult{
+	width: 100%;
+	height: 100%;
+	background-image: url("http://www.boweryboyshistory.com/wp-content/uploads/2015/05/MIN_114-Park-Slope_flowerhomes.png");
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right:0;
+	margin: 0;
+	z-index:5;
+	overflow: hidden;
+	display: none;
 }
 
