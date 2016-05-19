@@ -107,11 +107,38 @@ a{
 button{
 	background-color:rgba(0, 0, 0, 0.5);
 	width:20em;
+	height:4em;
 	border:none;
 	letter-spacing: .5px;
 	position: absolute;
     top: 70%;
     left: 35%;
+    z-index: 100
+}
+
+
+button:hover{
+	transition: border 0.5s ease;
+	background-color:rgba(0, 0, 0, 0.9);
+	border:1px solid white;
+	width:20em;
+	letter-spacing: .5px;
+	position: absolute;
+    top: 70%;
+    left: 35%;
+     z-index: 100
+}
+
+button:focus{
+	transition: border 0.5s ease;
+	background-color:rgba(0, 0, 0, 0.9);
+	border:1px solid white;
+	width:20em;
+	letter-spacing: .5px;
+	position: absolute;
+    top: 70%;
+    left: 35%;
+    z-index: 100
 }
 
 /*button media queries*/
@@ -129,17 +156,6 @@ button{
    button{
       left:30%;
     }
-}
-
-button:hover{
-	transition: border 0.5s ease;
-	background-color:rgba(0, 0, 0, 0.9);
-	border:.5px solid white;
-	width:20em;
-	letter-spacing: .5px;
-	position: absolute;
-    top: 70%;
-    left: 35%;
 }
 
 
@@ -165,6 +181,7 @@ button:hover{
 .introtext{
 	margin-top:6em;
 	transition: 0.5s ease;
+	z-index:1000;
 }
 
 
@@ -192,6 +209,8 @@ button:hover{
 /*	display: none;*/
 }
 
+
+
 .cta:hover{
 	font-weight:400;
 }
@@ -207,12 +226,13 @@ button:hover{
 
 .questionbox{
 	width:70%;
-	height:34em;
+	height:80%;
 	background-color: rgba(0, 0, 0, 0.7);
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:3em;
+	z-index:500;
 }
 @media only screen and (max-width: 800px){
    .questionbox{
@@ -255,6 +275,8 @@ button:hover{
 	max-height:20px;
 	margin-left:auto;
 	margin-right:auto;
+	padding-left: 45px;
+	padding-top:5px;
 }
 
 @media only screen and (max-width: 500px){
@@ -297,7 +319,7 @@ button:hover{
     margin-left:20px;
     padding-left: 10px;
     padding-right: 30px;
-    padding-top:auto;
+    padding-top:2em;
     padding-bottom:auto;
 }
 
@@ -329,7 +351,7 @@ button:hover{
     padding-left: 10px;
     margin-left:20px;
     margin-right: 20px;
-    padding-top:auto;
+    padding-top:2em;
     padding-bottom:auto;
 }
 
@@ -345,6 +367,10 @@ button:hover{
 }
 
 
+li.answer:hover{
+	border:1px solid white;
+}
+
 @media only screen and (max-width: 700px) {
     ul.answercolumn{
     margin-bottom:-12px;
@@ -359,6 +385,7 @@ button:hover{
     padding-left: 43px;
     padding-bottom: 20px;
     padding-right:0px;
+    z-index:1000;
 }
 
 @media only screen and (max-width: 700px) {
@@ -378,6 +405,15 @@ button:hover{
     }
 }
 
+.answercolumn li:hover{
+	background-color:#ffffff;
+	min-height: 60px;
+    padding-left: 43px;
+    padding-bottom: 20px;
+    padding-right:0px;
+    z-index:1000;
+    border:1px solid white;
+}
 
 
 .answercolumn li img{
@@ -387,7 +423,8 @@ button:hover{
 @media only screen and (max-width: 700px) {
     .answercolumn li img{
     max-height:40px;
-    max-width:auto;  
+    max-width:auto;
+    z-index:1000;  
     }
 }
 
@@ -396,6 +433,11 @@ button:hover{
 	float:right;
 	padding-right: 30px;
 	font-size: 16px;
+	z-index:1000;
+}
+
+.nextquestion:hover{
+	font-weight:900;
 }
 
 @media only screen and (max-width: 800px) {
