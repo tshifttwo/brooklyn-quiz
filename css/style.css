@@ -196,7 +196,7 @@ button:focus{
 	width: 100%;
 	height: 100%;
 	color: #fffff;
-	background-image: url("http://www.theepochtimes.com/n3/eet-content/uploads/2013/05/20120125-Brooklyn+Bridge-IMG_9622-Amal+Chen.jpg");
+	background-image: url("https://dl.dropboxusercontent.com/s/2ngdakwpsmoiq8b/20120125-Brooklyn%2BBridge-IMG_9622-Amal%2BChen.jpg?dl=0");
 	position: absolute;
 	background-position: center;
 	background-size: cover;
@@ -471,17 +471,23 @@ h2#youbelong{
 }
 
 .links{
-	width:100%;
+	width:95%;
+	display: block;
+    width: 100%;
+    height: 100px;
+    padding-top: 47px;
+    margin:auto;
 }
 
 #linkbox{
-	width: 27%;
+	width: 29%;
     float: left;
     border: 1px solid white;
-    margin-left: 16px;
+    margin-left: 10px;
     margin-right: 10px;
-    padding: 5px;
+    padding:0;
     height: 70px;
+
 
 }
 
@@ -517,6 +523,7 @@ h2#youbelong{
 
 .or{
 	float:left;
+	padding-top:20px;
 }
 
 .restartlink{
@@ -533,7 +540,7 @@ h2#youbelong{
 .question1{
 	width: 100%;
 	height: 100%;
-	background-image: url("file:///Users/Tatiana/Documents/Thinkful/Project/brooklyn-quiz/Exports/subway.png");
+	background-image: url("https://dl.dropboxusercontent.com/s/xl8vt2angcb7m4b/subway.png?dl=0");
 	position: absolute;
 	background-position: center;
 	background-size: cover;
@@ -549,7 +556,7 @@ h2#youbelong{
 .question2{
 	width: 100%;
 	height: 100%;
-	background-image: url("file:///Users/Tatiana/Documents/Thinkful/Project/brooklyn-quiz/Exports/london-shopper.png");
+	background-image: url("https://dl.dropboxusercontent.com/s/oo2evgwxdt58lpm/london-shopper.png?dl=0");
 	position: absolute;
 	background-position: center;
 	background-size: cover;
@@ -565,7 +572,7 @@ h2#youbelong{
 .question3{
 	width: 100%;
 	height: 100%;
-	background-image: url("file:///Users/Tatiana/Documents/Thinkful/Project/brooklyn-quiz/Exports/williamsburg.png");
+	background-image: url("https://dl.dropboxusercontent.com/s/631435t6crw3tvc/williamsburg.png?dl=0");
 	position: absolute;
 	background-position: center;
 	background-size: cover;
@@ -581,7 +588,7 @@ h2#youbelong{
 .question4{
 	width: 100%;
 	height: 100%;
-	background-image: url("file:///Users/Tatiana/Documents/Thinkful/Project/brooklyn-quiz/original%20images/image.jpg");
+	background-image: url("https://dl.dropboxusercontent.com/s/8p8bfa06hhr0hiv/image.jpg?dl=0");
 	position: absolute;
 	background-position: center;
 	background-size: cover;
@@ -597,7 +604,7 @@ h2#youbelong{
 .question5{
 	width: 100%;
 	height: 100%;
-	background-image: url("file:///Users/Tatiana/Documents/Thinkful/Project/brooklyn-quiz/original%20images/Dumbo.jpg");
+	background-image: url("https://dl.dropboxusercontent.com/s/ssd4i4tzjesujov/Dumbo.jpg?dl=0");
 	position: absolute;
 	background-position: center;
 	background-size: cover;
