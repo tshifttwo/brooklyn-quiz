@@ -7,12 +7,12 @@ $(document).ready(function(){
 
 	});
 
-	$(".question1").click(function(){
+	$('#firstquestion #next').click(function(){
 		$(".question1").fadeOut(2000);
 		$(".question2").fadeIn(2000);
 	});
 
-	$(".question2").click(function(){
+	$('#firstquestion #next').click(function(){
 		$(".question2").fadeOut(2000);
 		$(".question3").fadeIn(2000);
 	});
@@ -208,7 +208,8 @@ var questions = [
 			},
 		],
 	}
-]
+]// do i really need "answers" array?
+
 
 	
 

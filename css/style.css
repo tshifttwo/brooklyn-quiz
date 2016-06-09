@@ -226,13 +226,13 @@ button:focus{
 
 .questionbox{
 	width:70%;
-	height:80%;
+	height:70%;
 	background-color: rgba(0, 0, 0, 0.7);
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:3em;
-	z-index:500;
+	margin-top:2.5em;
+	z-index:100;
 }
 @media only screen and (max-width: 800px){
    .questionbox{
@@ -428,6 +428,14 @@ li.answer:hover{
     }
 }
 
+.boxfooter{
+	display:block;
+	width:100%;
+	height:2em;
+	z-index:501;
+	clear:both;
+}
+
 
 .nextquestion{
 	float:right;
@@ -437,6 +445,12 @@ li.answer:hover{
 }
 
 .nextquestion:hover{
+	z-index:1000;
+	font-weight:900;
+}
+
+.nextquestion:focus{
+	z-index:1000;
 	font-weight:900;
 }
 
