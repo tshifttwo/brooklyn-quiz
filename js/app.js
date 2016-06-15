@@ -2,56 +2,78 @@ $(document).ready(function(){
 	
 
 	$('button').click(function(){
+		
 		$(".intropage").fadeOut(2000);
 		$(".question1").fadeIn(2000);
 
 	});
 
-	$('#firstquestion #next').click(function(){
-		$(".question1").fadeOut(2000);
-		$(".question2").fadeIn(2000);
-	});
+$(".nextquestion").click(function(){
+	if($('.question1').is(':visible')) {
+		$('.question1').fadeOut(2000);
+		$('.question2').fadeIn(2000);
+		}
+	if($('.question2').is(':visible')) {
+		$('.question2').fadeOut(2000);
+		$('.question3').fadeIn(2000);
+		}
+	if($('.question3').is(':visible')) {
+		$('.question3').fadeOut(2000);
+		$('.question4').fadeIn(2000);
+		}
+	if($('.question4').is(':visible')) {
+		$('.question4').fadeOut(2000);
+		$('.question5').fadeIn(2000);
+		}
+	// else run total function;
+});
 
-	$('#firstquestion #next').click(function(){
-		$(".question2").fadeOut(2000);
-		$(".question3").fadeIn(2000);
-	});
 
-	$(".question3").click(function(){
-		$(".question3").fadeOut(2000);
-		$(".question4").fadeIn(2000);
-	});
+	// $('#nextquestion').click(function(){
+	// 	$(".question1").fadeOut(2000);
+	// 	$(".question2").fadeIn(2000);
+	// });
 
-	$(".question4").click(function(){
-		$(".question4").fadeOut(2000);
-		$(".question5").fadeIn(2000);
-	});
+	// $('#firstquestion #next').click(function(){
+	// 	$(".question2").fadeOut(2000);
+	// 	$(".question3").fadeIn(2000);
+	// });
 
-	$(".question5").click(function(){
-		$(".question5").fadeOut(2000);
-		$(".Williamsburgresult").fadeIn(2000);
-	});
+	// $(".question3").click(function(){
+	// 	$(".question3").fadeOut(2000);
+	// 	$(".question4").fadeIn(2000);
+	// });
 
-	$(".Williamsburgresult").click(function(){
-		$(".Williamsburgresult").fadeOut(2000);
-		$(".CHeightsresult").fadeIn(2000);
-	});
+	// $(".question4").click(function(){
+	// 	$(".question4").fadeOut(2000);
+	// 	$(".question5").fadeIn(2000);
+	// });
 
-	$(".CHeightsresult").click(function(){
-		$(".CHeightsresult").fadeOut(2000);
-		$(".dumboresult").fadeIn(2000);
-	});
+	// $(".question5").click(function(){
+	// 	$(".question5").fadeOut(2000);
+	// 	$(".Williamsburgresult").fadeIn(2000);
+	// });
+
+	// $(".Williamsburgresult").click(function(){
+	// 	$(".Williamsburgresult").fadeOut(2000);
+	// 	$(".CHeightsresult").fadeIn(2000);
+	// });
+
+	// $(".CHeightsresult").click(function(){
+	// 	$(".CHeightsresult").fadeOut(2000);
+	// 	$(".dumboresult").fadeIn(2000);
+	// });
 
 	
-	$(".dumboresult").click(function(){
-		$(".dumboresult").fadeOut(2000);
-		$(".parkslopeesult").fadeIn(2000);
-	});
+	// $(".dumboresult").click(function(){
+	// 	$(".dumboresult").fadeOut(2000);
+	// 	$(".parkslopeesult").fadeIn(2000);
+	// });
 
-	$(".parkslopeesult").click(function(){
-		$(".parkslopeesult").fadeOut(2000);
-		$(".intropage").fadeIn(2000);
-	});
+	// $(".parkslopeesult").click(function(){
+	// 	$(".parkslopeesult").fadeOut(2000);
+	// 	$(".intropage").fadeIn(2000);
+	// });
 
 var neighborhood = {
 		"williamsburg": 0, //properties
@@ -61,6 +83,10 @@ var neighborhood = {
 		"bushwick":0,
 		"parkslope":0,
 	};
+
+
+
+//on nextquestion click, hide current data question and show dataquestion+1//
 
 var questions = [
 	{
@@ -214,3 +240,4 @@ var questions = [
 	
 
 });
+

@@ -9,24 +9,20 @@ h1{
 	font-family: 'Francois One', sans-serif;
 	color:#ffffff;
 	letter-spacing: .8px;
-	text-align:center;
-	
+	text-align:center;	
 }
 
 @media only screen and (max-width: 500px) {
     h1{
-      font-size: 2.5em;
-        
+      font-size: 2.5em;   
     }
 }
 
-h2{font-family: 'Lato', sans-serif;
-color:#ffffff;
-font-weight: 300;
-
+h2{
+	font-family: 'Lato', sans-serif;
+	color:#ffffff;
+	font-weight: 300;
 }
-
-
 
 
 h3{
@@ -111,9 +107,8 @@ button{
 	border:none;
 	letter-spacing: .5px;
 	position: absolute;
-    top: 70%;
-    left: 35%;
-    z-index: 100
+	top:70%;
+	left:35%;
 }
 
 
@@ -126,7 +121,6 @@ button:hover{
 	position: absolute;
     top: 70%;
     left: 35%;
-     z-index: 100
 }
 
 button:focus{
@@ -138,7 +132,6 @@ button:focus{
 	position: absolute;
     top: 70%;
     left: 35%;
-    z-index: 100
 }
 
 /*button media queries*/
@@ -161,7 +154,6 @@ button:focus{
 
 .overlay{
   content: " ";
-  z-index: 10;
   display: block;
   position: absolute;
   height: 100%;
@@ -181,7 +173,7 @@ button:focus{
 .introtext{
 	margin-top:6em;
 	transition: 0.5s ease;
-	z-index:1000;
+/*	z-index:1000;*/
 }
 
 
@@ -192,9 +184,20 @@ button:focus{
     }
 }
 
+.introcontent{
+	position:relative;
+	z-index:1;
+	height:12em;
+	margin:auto;
+}
+
+.cta{
+	margin:auto;
+}
+
 .intropage {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	color: #fffff;
 	background-image: url("https://dl.dropboxusercontent.com/s/2ngdakwpsmoiq8b/20120125-Brooklyn%2BBridge-IMG_9622-Amal%2BChen.jpg?dl=0");
 	position: absolute;
@@ -204,7 +207,7 @@ button:focus{
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+	/*z-index:5;*/
 	overflow: hidden;
 /*	display: none;*/
 }
@@ -225,17 +228,21 @@ button:focus{
 
 
 .questionbox{
+	overflow: scroll;
 	width:70%;
-	height:70%;
+	height:75%;
 	background-color: rgba(0, 0, 0, 0.7);
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:2.5em;
-	z-index:100;
+	position:relative;
+	z-index:1;
+	/*z-index:100;*/
 }
 @media only screen and (max-width: 800px){
    .questionbox{
+   	overflow: scroll;
     width: 85%;
     height: 90%;
         }
@@ -321,6 +328,7 @@ button:focus{
     padding-right: 30px;
     padding-top:2em;
     padding-bottom:auto;
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -383,9 +391,10 @@ li.answer:hover{
 	background-color:none;
 	min-height: 60px;
     padding-left: 43px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    padding-top:15px;
     padding-right:0px;
-    z-index:1000;
+    /*z-index:1000;*/
 }
 
 @media only screen and (max-width: 700px) {
@@ -405,13 +414,13 @@ li.answer:hover{
     }
 }
 
-.answercolumn li:hover{
-	background-color:#ffffff;
-	min-height: 60px;
+.answercolumn li:hover, .answercolumn li:focus{
+	background-color:black;
+	max-height: 21px;
     padding-left: 43px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
     padding-right:0px;
-    z-index:1000;
     border:1px solid white;
 }
 
@@ -424,7 +433,7 @@ li.answer:hover{
     .answercolumn li img{
     max-height:40px;
     max-width:auto;
-    z-index:1000;  
+    /*z-index:1000; */ 
     }
 }
 
@@ -432,25 +441,28 @@ li.answer:hover{
 	display:block;
 	width:100%;
 	height:2em;
-	z-index:501;
+	/*z-index:501;*/
 	clear:both;
 }
 
 
 .nextquestion{
+	clear:both;
 	float:right;
+	padding-top:15px;
+	padding-bottom:20px;
 	padding-right: 30px;
 	font-size: 16px;
-	z-index:1000;
+	/*z-index:1000;*/
 }
 
 .nextquestion:hover{
-	z-index:1000;
+	/*z-index:1000;*/
 	font-weight:900;
 }
 
 .nextquestion:focus{
-	z-index:1000;
+	/*z-index:1000;*/
 	font-weight:900;
 }
 
@@ -470,7 +482,7 @@ li.answer:hover{
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:8em;
-	z-index:20;
+	/*z-index:20;*/
 }
 @media only screen and (max-width: 800px){
    .resultbox{
@@ -552,8 +564,8 @@ h2#youbelong{
 
 
 .question1{
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	background-image: url("https://dl.dropboxusercontent.com/s/xl8vt2angcb7m4b/subway.png?dl=0");
 	position: absolute;
 	background-position: center;
@@ -562,71 +574,71 @@ h2#youbelong{
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+/*	z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
 
 .question2{
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	background-image: url("https://dl.dropboxusercontent.com/s/oo2evgwxdt58lpm/london-shopper.png?dl=0");
-	position: absolute;
+	position: relative;
 	background-position: center;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+/*	z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
 
 .question3{
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	background-image: url("https://dl.dropboxusercontent.com/s/631435t6crw3tvc/williamsburg.png?dl=0");
-	position: absolute;
+	position: relative;
 	background-position: center;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+/*	z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
 
 .question4{
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	background-image: url("https://dl.dropboxusercontent.com/s/8p8bfa06hhr0hiv/image.jpg?dl=0");
-	position: absolute;
+	position: relative;
 	background-position: center;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+/*	z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
 
 .question5{
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	background-image: url("https://dl.dropboxusercontent.com/s/ssd4i4tzjesujov/Dumbo.jpg?dl=0");
-	position: absolute;
+	position: relative;
 	background-position: center;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+	/*z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
@@ -636,97 +648,97 @@ h2#youbelong{
 ---------------------------------------------------------------------------------*/
 
 .Williamsburgresult{
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	background-image: url("http://www.raystours.nyc/wp-content/uploads/2015/01/11-_DSC0134-001.jpg");
-	position: absolute;
+	position: relative;
 	background-position: center;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+	/*z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
 
 .Bushwickresult{
-	width: 100%;
+	width: 100vh;
 	height: 100%;
 	background-image: url("https://joedicondina.files.wordpress.com/2015/05/bushwick1.jpg");
-	position: absolute;
+	position: relative;
 	background-position: center;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+	/*z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
 
 .CHeightsresult{
-	width: 100%;
+	width: 100vh;
 	height: 100%;
 	background-image: url("http://blog.propcy.com/wp-content/uploads/2015/10/crown-heights-cover.jpg");
-	position: absolute;
+	position: relative;
 	background-position: center;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+	/*z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
 
 .bkHeightsresult{
-	width: 100%;
+	width: 100vh;
 	height: 100%;
 	background-image: url("https://www.walksofnewyork.com/blog/wp-content/uploads/2012/07/Cranberry-St-1024x768.jpg");
-	position: absolute;
+	position: relative;
 	background-position: center;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+	/*z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
 
 .dumboresult{
-	width: 100%;
+	width: 100vh;
 	height: 100%;
 	background-image: url("http://pixel.nymag.com/imgs/daily/intelligencer/2015/10/10/10-dumbo-brooklyn.w750.h560.2x.jpg");
-	position: absolute;
+	position: relative;
 	background-position: center;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+	/*z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
 
 .parkslopeesult{
-	width: 100%;
+	width: 100vh;
 	height: 100%;
 	background-image: url("http://www.boweryboyshistory.com/wp-content/uploads/2015/05/MIN_114-Park-Slope_flowerhomes.png");
-	position: absolute;
+	position: relative;
 	background-position: center;
 	background-size: cover;
 	top: 0;
 	left: 0;
 	right:0;
 	margin: 0;
-	z-index:5;
+	/*z-index:5;*/
 	overflow: hidden;
 	display: none;
 }
